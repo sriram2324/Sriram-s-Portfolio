@@ -1,0 +1,142 @@
+// Node script to generate a valid, clean PDF resume for Sriram R
+import fs from 'fs';
+import path from 'path';
+
+function createPdfContent() {
+  const content = `BT
+/F1 20 Tf
+50 750 Td
+(SRIRAM R) Tj
+/F2 12 Tf
+0 -20 Td
+(Data Science & Python Professional | Bangalore, Karnataka) Tj
+0 -16 Td
+(Email: sriram.riya.r@gmail.com | Phone: +91-8608850397) Tj
+0 -16 Td
+(GitHub: sriramriya | LeetCode: sriram_22 | LinkedIn: sriramraja22) Tj
+
+/F1 14 Tf
+0 -35 Td
+(PROFESSIONAL SUMMARY) Tj
+/F2 10 Tf
+0 -16 Td
+(Dynamic data science professional with hands-on experience in Python development and data analysis,) Tj
+0 -14 Td
+(with skills in data visualization, SQL databases, Excel management, teamwork and communication.) Tj
+
+/F1 14 Tf
+0 -30 Td
+(EDUCATION) Tj
+/F1 11 Tf
+0 -16 Td
+(Paavai Engineering College (Autonomous), Namakkal) Tj
+/F2 10 Tf
+0 -14 Td
+(Bachelor of Engineering in Computer Science Engineering | May 2026 | GPA: 7.8) Tj
+/F1 11 Tf
+0 -16 Td
+(Sree Ambaal's Matric Higher Secondary School, Perambalur) Tj
+/F2 10 Tf
+0 -14 Td
+(Higher Secondary Certificate (HSC) | May 2022 | 82%) Tj
+0 -14 Td
+(Secondary School Leaving Certificate (SSLC) | May 2020 | 80%) Tj
+
+/F1 14 Tf
+0 -30 Td
+(TECHNICAL & PROFESSIONAL SKILLS) Tj
+/F2 10 Tf
+0 -16 Td
+(Programming Languages: Python, C, C++) Tj
+0 -14 Td
+(Data & Databases: Data Analysis, Data Visualization, SQL Databases, MS Excel) Tj
+0 -14 Td
+(Professional Skills: Teamwork, Workplace Communication, Time Management) Tj
+
+/F1 14 Tf
+0 -30 Td
+(EXPERIENCE & INTERNSHIPS) Tj
+/F1 11 Tf
+0 -16 Td
+(Participant - GDSC (Google Developer Student Club), Namakkal) Tj
+/F2 10 Tf
+0 -14 Td
+(Sep 2025 - Nov 2025 | Python programming in Google Colab, social-impact activities, C/C++, MS Excel) Tj
+/F1 11 Tf
+0 -16 Td
+(Data Science Intern - Corizo - Edu Tech) Tj
+/F2 10 Tf
+0 -14 Td
+(Apr 2025 - Jun 2025 | Data Science & Python workflows) Tj
+/F1 11 Tf
+0 -16 Td
+(Data Science Intern - Live Stream Technologies) Tj
+/F2 10 Tf
+0 -14 Td
+(Jan 2025 - Feb 2025 | Data Science, Python, and Data Analysis) Tj
+/F1 11 Tf
+0 -16 Td
+(Artificial Intelligence & Machine Learning Intern - AICTE - Edu Skills) Tj
+/F2 10 Tf
+0 -14 Td
+(Apr 2024 - Jun 2024 | Artificial Intelligence & Machine Learning) Tj
+
+/F1 14 Tf
+0 -30 Td
+(EXTRACURRICULAR & INTERESTS) Tj
+/F2 10 Tf
+0 -16 Td
+(Activities: NSS Volunteering, YI Volunteering, Placement Coordinator, Basketball Player) Tj
+0 -14 Td
+(Areas of Interest: Networking Building, Entrepreneurship) Tj
+ET`;
+
+  const streamLength = Buffer.byteLength(content, 'utf-8');
+
+  const pdf = `%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length ${streamLength} >>
+stream
+${content}
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000002150 00000 n 
+0000002230 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2305
+%%EOF`;
+
+  return pdf;
+}
+
+const pdfData = createPdfContent();
+const publicDir = path.resolve('public');
+if (!fs.existsSync(publicDir)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+}
+fs.writeFileSync(path.join(publicDir, 'resume.pdf'), pdfData, 'utf-8');
+console.log('Created valid resume.pdf in public directory');
