@@ -219,7 +219,7 @@ class PortfolioKnowledgeBase {
       q.includes(' resume ') ||
       q.includes(' cv ')
     ) {
-      return `Sriram's social & professional links:\n• GitHub: https://github.com/sriramriya (Username: sriramriya)\n• LinkedIn: https://www.linkedin.com/in/sriramraja22?utm_source=share_via&utm_content=profile&utm_medium=member_android (Username: sriramraja22)\n• LeetCode: https://leetcode.com/u/sriram_22 (Username: sriram_22)\n• Resume: Available via the "Download Resume" button on this website.`;
+      return `Sriram's social & professional links:\n• GitHub: https://github.com/sriram2324 (Username: sriram2324)\n• LinkedIn: https://www.linkedin.com/in/sriramraja22?utm_source=share_via&utm_content=profile&utm_medium=member_android (Username: sriramraja22)\n• LeetCode: https://leetcode.com/u/sriram_22 (Username: sriram_22)\n• Resume: Available via the "Download Resume" button on this website.`;
     }
 
     // Strict refusal when question is outside provided resume/portfolio

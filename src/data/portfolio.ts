@@ -22,8 +22,8 @@ export const portfolioData: PortfolioData = {
     {
       platform: 'github',
       label: 'GitHub',
-      username: 'sriramriya',
-      url: 'https://github.com/sriramriya',
+      username: 'sriram2324',
+      url: 'https://github.com/sriram2324',
       iconName: 'Github',
     },
     {

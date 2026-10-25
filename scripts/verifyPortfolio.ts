@@ -49,7 +49,7 @@ async function runTests() {
   assert(q4.text.includes('7.8') && q4.text.includes('Paavai'), 'Chatbot answers GPA & college');
 
   const q5 = await sendChatMessage('Where can I find his GitHub?');
-  assert(q5.text.includes('sriramriya'), 'Chatbot provides new GitHub username/link');
+  assert(q5.text.includes('sriram2324'), 'Chatbot provides new GitHub username/link');
 
   const q6 = await sendChatMessage('What is his LinkedIn?');
   assert(q6.text.includes('sriramraja22'), 'Chatbot provides new LinkedIn URL');

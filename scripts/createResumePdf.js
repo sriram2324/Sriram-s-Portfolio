@@ -13,7 +13,7 @@ function createPdfContent() {
 0 -16 Td
 (Email: sriram.riya.r@gmail.com | Phone: +91-8608850397) Tj
 0 -16 Td
-(GitHub: sriramriya | LeetCode: sriram_22 | LinkedIn: sriramraja22) Tj
+(GitHub: sriram2324 | LeetCode: sriram_22 | LinkedIn: sriramraja22) Tj
 
 /F1 14 Tf
 0 -35 Td

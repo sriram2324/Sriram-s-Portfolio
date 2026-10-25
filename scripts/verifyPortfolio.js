@@ -1,6 +1,6 @@
 // Automated test script to verify Sriram AI Chatbot local knowledge engine
-import { sendChatMessage } from './src/services/chatService.js';
-import { portfolioData } from './src/data/portfolio.js';
+import { sendChatMessage } from '../src/services/chatService';
+import { portfolioData } from '../src/data/portfolio';
 import fs from 'fs';
 import path from 'path';
 
@@ -50,7 +50,7 @@ async function runTests() {
   assert(q4.text.includes('7.8') && q4.text.includes('Paavai'), 'Chatbot answers GPA & college');
 
   const q5 = await sendChatMessage('Where can I find his GitHub?');
-  assert(q5.text.includes('sriram5678'), 'Chatbot provides GitHub username/link');
+  assert(q5.text.includes('sriram2324'), 'Chatbot provides GitHub username/link');
 
   // 5. Test strict refusal on unknown/invented queries
   const qOut = await sendChatMessage('Does Sriram have 10 years experience in Quantum Robotics at NASA?');
