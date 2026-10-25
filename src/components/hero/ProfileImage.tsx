@@ -9,8 +9,8 @@ interface ProfileImageProps {
 }
 
 export const ProfileImage: React.FC<ProfileImageProps> = ({
-  src = '/profile.jpg',
-  alt = 'Sriram R - Data Science & Python Professional',
+  src = '/images/sriram-formal.jpg',
+  alt = 'Sriram R — Computer Science Engineering graduate',
   className = '',
 }) => {
   const [imageError, setImageError] = useState(false);

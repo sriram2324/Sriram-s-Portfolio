@@ -55,7 +55,7 @@ export const Hero: React.FC = () => {
             {/* Status / Role Tag */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-6 border bg-[#1C2541]/90 text-[#D4A373] border-[#D4A373]/30 shadow-soft backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-[#6FFFE9] animate-ping" />
-              <span>Data Science &amp; Python Professional</span>
+              <span>Entry-Level IT Professional</span>
             </div>
 
             {/* Name */}
@@ -66,9 +66,9 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
 
-            {/* Subtitle / Role */}
-            <p className="text-xl sm:text-2xl font-semibold text-[#EAEAEA] mb-6 font-heading flex items-center justify-center lg:justify-start gap-2">
-              <Sparkles className="w-5 h-5 text-[#D4A373] inline" />
+            {/* Headline */}
+            <p className="text-lg sm:text-xl md:text-2xl font-semibold text-[#EAEAEA] mb-6 font-heading flex items-center justify-center lg:justify-start gap-2">
+              <Sparkles className="w-5 h-5 text-[#D4A373] inline flex-shrink-0" />
               <span>{personal.role}</span>
             </p>
 
@@ -79,13 +79,24 @@ export const Hero: React.FC = () => {
 
             {/* CTA Action Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-8 w-full sm:w-auto">
-              {/* View Projects */}
+              {/* View My Projects */}
               <a
                 href="#projects"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm tracking-wide bg-gradient-to-r from-[#D4A373] via-[#E4BD96] to-[#D4A373] hover:opacity-95 text-[#0B132B] shadow-glow-copper transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
               >
-                <span>View Projects</span>
+                <span>View My Projects</span>
                 <ArrowRight className="w-4 h-4" />
+              </a>
+
+              {/* Download Resume */}
+              <a
+                href={personal.resumeUrl}
+                download="Sriram_R_Resume.pdf"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-[#EAEAEA] bg-[#1C2541] hover:bg-[#232E4F] hover:text-[#6FFFE9] border border-[#6FFFE9]/40 hover:border-[#6FFFE9] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-soft w-full sm:w-auto"
+                title="Download Sriram R's Resume"
+              >
+                <Download className="w-4 h-4 text-[#6FFFE9]" />
+                <span>Download Resume</span>
               </a>
 
               {/* Contact Me */}
@@ -95,17 +106,6 @@ export const Hero: React.FC = () => {
               >
                 <Mail className="w-4 h-4 text-[#D4A373]" />
                 <span>Contact Me</span>
-              </a>
-
-              {/* Download Resume */}
-              <a
-                href={personal.resumeUrl}
-                download="Sriram_R_Resume.pdf"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-[#EAEAEA] bg-[#1C2541]/80 hover:bg-[#232E4F] hover:text-[#6FFFE9] border border-[#6FFFE9]/30 hover:border-[#6FFFE9] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-soft w-full sm:w-auto"
-                title="Download Sriram R's Resume"
-              >
-                <Download className="w-4 h-4 text-[#6FFFE9]" />
-                <span>Download Resume</span>
               </a>
             </div>
 
@@ -141,7 +141,10 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.9, ease: 'easeOut' }}
             className="lg:col-span-5 flex justify-center items-center mt-6 lg:mt-0"
           >
-            <ProfileImage />
+            <ProfileImage
+              src={personal.profileImageUrl}
+              alt="Sriram R — Computer Science Engineering graduate"
+            />
           </motion.div>
 
         </div>

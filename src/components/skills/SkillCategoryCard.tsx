@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Database, Briefcase, Check, Sparkles, LucideIcon } from 'lucide-react';
+import { Terminal, Database, Briefcase, BarChart3, Layers, Check, Sparkles, LucideIcon } from 'lucide-react';
 import { SkillCategory } from '../../types';
 
 interface SkillCategoryCardProps {
@@ -12,6 +12,8 @@ const iconMap: Record<string, LucideIcon> = {
   Terminal,
   Database,
   Briefcase,
+  BarChart3,
+  Layers,
 };
 
 export const SkillCategoryCard: React.FC<SkillCategoryCardProps> = ({ category, index }) => {

@@ -116,7 +116,7 @@ class PortfolioKnowledgeBase {
       q.includes(' visualization ') ||
       q.includes(' analysis ')
     ) {
-      return `Here are Sriram's verified skills:\n\n• Programming: Python, C, C++\n• Data & Databases: Data Analysis, Data Visualization, SQL Databases, MS Excel\n• Professional: Teamwork, Workplace Communication, Time Management`;
+      return `Here are Sriram's verified skills:\n\n• Programming: Python, C, C++\n• Databases: SQL Databases (SQLite, Relational Queries)\n• Productivity & Analytics: Microsoft Excel, Data Analysis, Data Visualization\n• Additional Tools & Project Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly, Streamlit, pytest, REST APIs, Git & GitHub\n• Professional: Teamwork, Workplace Communication, Time Management`;
     }
 
     // 5. Experience & Internships

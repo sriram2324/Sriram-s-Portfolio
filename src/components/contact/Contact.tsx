@@ -102,15 +102,15 @@ export const Contact: React.FC = () => {
                         Phone Number
                       </span>
                       <a
-                        href={`tel:${personal.phone}`}
+                        href="tel:+918608850397"
                         className="text-sm font-semibold text-[#EAEAEA] hover:text-[#D4A373] transition-colors"
                       >
-                        {personal.phone}
+                        +91 8608850397
                       </a>
                     </div>
                   </div>
                   <button
-                    onClick={() => copyToClipboard(personal.phone, 'phone')}
+                    onClick={() => copyToClipboard('+91 8608850397', 'phone')}
                     className="p-2 rounded-xl bg-[#1C2541] hover:bg-[#232E4F] text-[#9EABC0] hover:text-[#D4A373] border border-[#232E4F] transition-colors shadow-soft"
                     title="Copy Phone"
                     aria-label="Copy Phone"

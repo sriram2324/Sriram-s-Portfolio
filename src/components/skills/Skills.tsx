@@ -3,7 +3,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { Container } from '../layout/Container';
 import { SkillCategoryCard } from './SkillCategoryCard';
 import { portfolioData } from '../../data/portfolio';
-import { Layers, Terminal, Database, Briefcase } from 'lucide-react';
+import { Layers, Terminal, Database, BarChart3, Wrench } from 'lucide-react';
 
 export const Skills: React.FC = () => {
   const { skillCategories } = portfolioData;
@@ -12,8 +12,9 @@ export const Skills: React.FC = () => {
   const filterButtons = [
     { id: 'all', label: 'All Skills', icon: Layers },
     { id: 'programming', label: 'Programming', icon: Terminal },
-    { id: 'data', label: 'Data & Databases', icon: Database },
-    { id: 'professional', label: 'Professional', icon: Briefcase },
+    { id: 'databases', label: 'Databases', icon: Database },
+    { id: 'productivity-analytics', label: 'Productivity & Analytics', icon: BarChart3 },
+    { id: 'additional-tools', label: 'Additional Tools', icon: Wrench },
   ];
 
   const filteredCategories =
@@ -31,7 +32,7 @@ export const Skills: React.FC = () => {
         <SectionHeading
           badgeText="Capabilities"
           title="Technical & Professional Skills"
-          subtitle="Core programming languages, analytical tools, database technologies, and workplace competencies."
+          subtitle="Core programming languages, database technologies, spreadsheet analytics, and project-verified frameworks."
         />
 
         {/* Category Filter Tabs */}
@@ -57,7 +58,7 @@ export const Skills: React.FC = () => {
         </div>
 
         {/* Skill Category Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {filteredCategories.map((category, index) => (
             <SkillCategoryCard key={category.id} category={category} index={index} />
           ))}
