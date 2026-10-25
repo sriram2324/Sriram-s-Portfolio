@@ -63,6 +63,7 @@ export interface ProjectItem {
   id: string;
   title: string;
   subtitle?: string;
+  category?: string;
   description: string;
   problemStatement?: string;
   solution?: string;
@@ -74,6 +75,7 @@ export interface ProjectItem {
   details?: string;
   screenshots?: string[];
   status?: 'upcoming' | 'completed' | 'in-progress';
+  featured?: boolean;
 }
 
 export interface EducationItem {

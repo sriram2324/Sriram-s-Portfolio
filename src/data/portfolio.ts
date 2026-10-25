@@ -174,61 +174,229 @@ export const portfolioData: PortfolioData = {
 
   projects: [
     {
-      id: 'data-science-project',
-      title: 'Data Science Project',
-      subtitle: 'Data Analytics & Insights',
-      description: 'Project details will be added soon.',
+      id: 'personal-finance-dashboard',
+      title: 'Personal Finance & Expense Intelligence Dashboard',
+      subtitle: 'Expense Analysis & Financial KPIs',
+      category: 'Financial Analytics',
+      featured: true,
+      description:
+        'An end-to-end personal finance analytics and budgeting application providing automated transaction validation, category budget tracking, spending velocity trends, core financial KPIs, and downloadable reports.',
       problemStatement:
-        'Detailed problem statement and business objective will be documented once the project repository is published.',
+        'Managing personal cash flows across variable expenses makes it difficult to maintain category budgets, track spending velocity, and identify spending leaks without structured analytics.',
       solution:
-        'Comprehensive analytical solution incorporating data pipelines, statistical evaluation, and interactive visual insights.',
-      technologies: ['Python', 'Data Analysis', 'SQL', 'Data Visualization'],
+        'A modular Python pipeline that cleans and audits raw financial records, tracks category budget variances, computes key financial KPIs, and renders interactive spending visualizations in Streamlit.',
+      technologies: ['Python', 'Pandas', 'Plotly', 'Streamlit', 'pytest'],
       keyFeatures: [
-        'End-to-end data processing workflow',
-        'Visual summary charts & reports',
-        'Database integration & querying',
+        'Automated expense analysis & category classification',
+        'Monthly budget tracking with variance alerts',
+        'Historical spending trends & net savings velocity',
+        'Interactive financial KPIs & metrics overview',
+        'Downloadable executive expense summary reports',
       ],
-      status: 'upcoming',
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/personal-finance-dashboard',
       details:
-        'This project slot is ready for integration. To update, add your title, repository link, live demo, and architecture notes in src/data/portfolio.ts.',
+        'Full implementation delivered in projects/personal-finance-dashboard with modular analytics engine, synthetic transaction dataset, interactive Streamlit app, and automated pytest test suite.',
     },
     {
-      id: 'python-project',
-      title: 'Python Project',
-      subtitle: 'Core Python Application',
-      description: 'Project details will be added soon.',
+      id: 'retail-sales-analytics',
+      title: 'Retail Sales Analytics with SQL',
+      subtitle: 'Commercial Sales Intelligence & SQL Aggregation',
+      category: 'SQL & Business Intelligence',
+      featured: true,
+      description:
+        'A business intelligence and relational analytics system evaluating retail sales volume, revenue growth trends, product performance hierarchies, customer purchasing patterns, and commercial business insights.',
       problemStatement:
-        'Detailed problem statement and application requirements will be documented soon.',
+        'Retail managers need consolidated multi-table visibility into order transactions to understand revenue fluctuations, product category velocity, and repeat customer purchasing behavior.',
       solution:
-        'Robust Python implementation built with modular programming, error handling, and clean code patterns.',
-      technologies: ['Python', 'C++', 'Data Structures', 'Automation'],
+        'Relational SQL data extraction and aggregation queries coupled with Python analytics to evaluate revenue trends, basket sizes, and product performance across normalized tables.',
+      technologies: ['SQL', 'Python', 'Pandas', 'Plotly', 'pytest'],
       keyFeatures: [
-        'Modular architecture',
-        'Efficient algorithm implementation',
-        'Data extraction & file handling',
+        'Relational SQL schema across 4 normalized database tables',
+        'Complex SQL queries with window functions & date aggregations',
+        'Retail revenue trends & seasonal sales performance',
+        'Product catalog evaluation & category contribution ranking',
+        'Customer purchasing patterns & basket size metrics',
       ],
-      status: 'upcoming',
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/retail-sales-analytics',
       details:
-        'This project slot is ready for integration. Update the GitHub and demo links in src/data/portfolio.ts.',
+        'Full implementation delivered in projects/retail-sales-analytics with SQLite relational schema, seed generator, SQL analytics engine, and automated pytest test suite.',
     },
     {
-      id: 'ml-project',
-      title: 'Machine Learning Project',
-      subtitle: 'Predictive Modeling & Intelligence',
-      description: 'Project details will be added soon.',
+      id: 'customer-churn-prediction',
+      title: 'Customer Churn Prediction',
+      subtitle: 'Predictive Modeling & Churn Risk Classification',
+      category: 'Machine Learning',
+      featured: true,
+      description:
+        'A reproducible scikit-learn machine learning workflow featuring exploratory data analysis, feature preprocessing and encoding without data leakage, baseline and classification models, and ROC-AUC evaluation.',
       problemStatement:
-        'Machine learning problem formulation, dataset characteristics, and baseline metrics will be added soon.',
+        'Subscription businesses experience customer churn and revenue attrition when warning indicators and behavioral signals go undetected prior to account cancellation.',
       solution:
-        'Predictive model pipeline utilizing feature engineering, model training, validation, and performance metric tracking.',
-      technologies: ['Machine Learning', 'Python', 'Data Visualization', 'Colab'],
+        'A scikit-learn predictive modeling pipeline with ColumnTransformer preprocessing, regularized Logistic Regression baseline, Random Forest classification, and Gini feature importance extraction.',
+      technologies: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'pytest'],
       keyFeatures: [
-        'Feature engineering & data preprocessing',
-        'Predictive model evaluation',
-        'Exploratory data analysis reporting',
+        'Exploratory data analysis (EDA) of customer behavioral drivers',
+        'Robust feature preprocessing & scaling with zero data leakage',
+        'Supervised classification models (Logistic Regression, Random Forest)',
+        'Comprehensive model evaluation (ROC-AUC, Precision, Recall, F1)',
+        'Explainable feature importance ranking',
       ],
-      status: 'upcoming',
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/customer-churn-prediction',
       details:
-        'This project slot is ready for integration. Simply edit this project item in src/data/portfolio.ts to populate your project details.',
+        'Full implementation delivered in projects/customer-churn-prediction with synthetic dataset, zero-data-leakage pipeline, model benchmarking, and automated pytest test suite.',
+    },
+    {
+      id: 'ecommerce-sales-analytics',
+      title: 'E-Commerce Sales Analytics',
+      subtitle: 'Revenue Trends & Customer RFM',
+      category: 'Commercial Analytics',
+      featured: false,
+      description:
+        'Multi-channel e-commerce analytics platform evaluating gross revenue trends, seasonal order volume, category performance rankings, and Recency-Frequency-Monetary (RFM) customer segmentation.',
+      problemStatement:
+        'Online merchants need granular visibility into customer transaction frequencies and product category contributions to retain high-value customer cohorts and optimize seasonal inventory.',
+      solution:
+        'A modular Python and Streamlit analytics engine computing MoM revenue growth trajectories, category revenue share, and behavioral RFM segmentation.',
+      technologies: ['Python', 'Pandas', 'SQL', 'Plotly', 'Streamlit', 'pytest'],
+      keyFeatures: [
+        'Sales and revenue trend analysis with MoM growth metrics',
+        'Monthly and seasonal order distribution modeling',
+        'Product and category performance contribution ranking',
+        'RFM customer segmentation (Champions, Loyal, Recent, At-Risk)',
+        'Interactive Streamlit KPI dashboard & downloadable CSV reports',
+      ],
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/ecommerce-sales-analytics',
+      details:
+        'Full implementation delivered in projects/ecommerce-sales-analytics with order dataset, RFM segmentation engine, Streamlit dashboard, and automated pytest test suite.',
+    },
+    {
+      id: 'data-quality-pipeline',
+      title: 'Data Cleaning and Quality Pipeline',
+      subtitle: 'Schema Validation & Audit Engine',
+      category: 'Data Engineering',
+      featured: false,
+      description:
+        'An automated, reusable data cleaning and validation pipeline providing missing-value imputation, duplicate detection, schema validation, statistical outlier capping (IQR), and audit reporting.',
+      problemStatement:
+        'Dirty tabular data with corrupt types, duplicate entries, invalid negative attributes, and extreme outliers undermine downstream business intelligence and machine learning models.',
+      solution:
+        'A reusable data validation pipeline that audits schema compliance, imputes missing values using robust statistical defaults, removes duplicate keys, and caps outliers using 1.5x IQR.',
+      technologies: ['Python', 'Pandas', 'SQL', 'pytest'],
+      keyFeatures: [
+        'Deterministic missing-value handling and imputation',
+        'Duplicate record detection on natural and composite keys',
+        'Data type validation and domain consistency checks',
+        'Statistical outlier detection and IQR boundary capping',
+        'Automated data quality scoring and markdown audit reports',
+      ],
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/data-quality-pipeline',
+      details:
+        'Full implementation delivered in projects/data-quality-pipeline with dirty sample dataset, modular pipeline classes, quality scoring engine, and automated pytest test suite.',
+    },
+    {
+      id: 'python-api-pipeline',
+      title: 'Python API Data Pipeline',
+      subtitle: 'REST Ingestion & Fault-Tolerant Storage',
+      category: 'Data Engineering',
+      featured: false,
+      description:
+        'A fault-tolerant REST API ingestion pipeline with automated pagination, exponential backoff retries, schema normalization, and relational SQLite storage with structured logging.',
+      problemStatement:
+        'External REST APIs are prone to transient network timeouts, rate limit throttles (HTTP 429), and malformed payloads requiring resilient ingestion pipelines.',
+      solution:
+        'A resilient Python pipeline connecting to open public REST endpoints with session pooling, backoff retry cycles, schema validation, and SQLite upsert mechanics.',
+      technologies: ['Python', 'REST APIs', 'Pandas', 'SQL', 'logging', 'pytest'],
+      keyFeatures: [
+        'Public REST API integration with real open endpoints',
+        'Response schema validation and structured normalization',
+        'Resilient pagination and exponential backoff retry handler',
+        'Relational SQLite table persistence with upsert mechanics',
+        'Comprehensive Python logging and automated pytest test suite',
+      ],
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/python-api-pipeline',
+      details:
+        'Full implementation delivered in projects/python-api-pipeline with open endpoint integration, SQLite persistence, unit tests with mocked responses, and structured logging.',
+    },
+    {
+      id: 'business-report-automation',
+      title: 'Business Performance Reporting Automation',
+      subtitle: 'KPI Calculation & Executive Reports',
+      category: 'Business Intelligence',
+      featured: false,
+      description:
+        'An automated enterprise business intelligence pipeline computing key financial KPIs, revenue-versus-quota target attainments, operating margins, and generating repeatable executive briefs.',
+      problemStatement:
+        'Manual compilation of quarterly commercial performance reports from fragmented spreadsheets is slow, error-prone, and delays management decisions.',
+      solution:
+        'A Python reporting automation pipeline that validates multi-department records, computes revenue attainment and operating margins, and generates formatted executive markdown and CSV briefs.',
+      technologies: ['Python', 'Pandas', 'SQL', 'CSV/Excel', 'Automated Reporting', 'pytest'],
+      keyFeatures: [
+        'Multi-department commercial dataset ingestion',
+        'Key financial KPIs (Revenue, Cost, Gross Profit, Operating Margin %)',
+        'Quota attainment tracking and revenue-per-employee metrics',
+        'Department performance comparison hierarchies',
+        'Repeatable executive summary report generation in Markdown & CSV',
+      ],
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/projects/business-report-automation',
+      details:
+        'Full implementation delivered in projects/business-report-automation with quarterly performance data, KPI engine, executive report generator, and automated pytest test suite.',
+    },
+    {
+      id: 'student-performance-analytics',
+      title: 'Student Academic Performance Analytics',
+      subtitle: 'Exploratory Analysis & Statistical Correlations',
+      category: 'Data Analytics',
+      featured: false,
+      description:
+        'An end-to-end data science pipeline analyzing student academic marks across subjects to discover the statistical relationship between daily study habits, attendance, and exam scores.',
+      problemStatement:
+        'Educational institutions need data-driven evidence to quantify how attendance and daily study hours dictate subject-level exam performance.',
+      solution:
+        'A modular Python analytics pipeline that audits student records, computes Pearson correlation metrics, renders high-resolution charts, and compiles findings reports.',
+      technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'pytest'],
+      keyFeatures: [
+        'Non-destructive dataset cleaning and validation rules',
+        'Descriptive statistics, benchmarks, and pass/fail distributions',
+        'Pearson correlation between attendance, study hours, and exam marks',
+        '5 high-resolution publication-grade Matplotlib charts',
+        'Automated unit and pipeline tests via pytest',
+      ],
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/project%201',
+      details:
+        'Full implementation delivered in project 1 folder with untouched raw dataset, cleaned dataset, 5 high-resolution charts, findings report, and automated pytest tests.',
+    },
+    {
+      id: 'news-sentiment-intelligence',
+      title: 'News Sentiment & Editorial Intelligence Studio',
+      subtitle: 'NLP Sentiment Telemetry & Feature Attribution',
+      category: 'NLP & Machine Learning',
+      featured: false,
+      description:
+        'An editorial-grade NLP intelligence platform that extracts linguistic sentiment signals, directional polarity, and mathematical feature attributions from news dispatches.',
+      problemStatement:
+        'Financial market announcements and media headlines contain nuanced sentiment valence that requires real-time quantitative feature extraction without model hallucination.',
+      solution:
+        'A production-grade NLP telemetry studio using sublinear TF-IDF feature representation, regularized Logistic Regression, zero data leakage, and interactive Plotly confusion matrices.',
+      technologies: ['Python', 'Scikit-learn', 'Plotly', 'Streamlit', 'Pandas'],
+      keyFeatures: [
+        'Real-time headline classification (Positive, Negative, Neutral)',
+        'Directional polarity spectrum meter (-1.000 to +1.000)',
+        'Feature attribution reel extracting influential n-grams',
+        'Batch analytics with CSV ingestion and confusion matrix telemetry',
+        'Curated 435-row benchmark dataset with zero data leakage',
+      ],
+      status: 'completed',
+      github: 'https://github.com/sriram2324/Sriram-s-Portfolio/tree/main/PROJECT%202',
+      details:
+        'Full implementation delivered in PROJECT 2 folder with curated benchmark dataset CONS-435, held-out evaluation telemetry (77.01% accuracy), interactive Streamlit studio, and automated test sandbox.',
     },
   ],
 

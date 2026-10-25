@@ -1,0 +1,17 @@
+Order_ID,Date,Customer_ID,Category,Product_Name,Quantity,Unit_Price,Total_Revenue,Payment_Method,City
+ORD_5001,2026-01-03,CUST_101,Electronics,Bluetooth Earbuds,2,2499,4998,UPI,Bangalore
+ORD_5002,2026-01-07,CUST_102,Apparel,Slim Fit Denim,1,1899,1899,Credit Card,Mumbai
+ORD_5003,2026-01-12,CUST_103,Home & Kitchen,Air Fryer 4L,1,5499,5499,Net Banking,Delhi
+ORD_5004,2026-01-18,CUST_101,Electronics,Smart Watch,1,3999,3999,UPI,Bangalore
+ORD_5005,2026-01-25,CUST_104,Books,Data Science Handbook,3,650,1950,Debit Card,Chennai
+ORD_5006,2026-02-02,CUST_105,Beauty & Grooming,Skincare Kit,2,1250,2500,UPI,Pune
+ORD_5007,2026-02-08,CUST_102,Apparel,Cotton Polo T-Shirt,3,799,2397,Credit Card,Mumbai
+ORD_5008,2026-02-14,CUST_106,Electronics,Noise Cancelling Headphones,1,8999,8999,Credit Card,Hyderabad
+ORD_5009,2026-02-21,CUST_107,Home & Kitchen,Espresso Coffee Maker,1,7200,7200,UPI,Kolkata
+ORD_5010,2026-02-27,CUST_103,Electronics,Wireless Mouse & Keyboard,1,1999,1999,Net Banking,Delhi
+ORD_5011,2026-03-04,CUST_108,Beauty & Grooming,Hair Dryer Pro,1,2800,2800,UPI,Ahmedabad
+ORD_5012,2026-03-10,CUST_101,Apparel,Winter Bomber Jacket,1,3499,3499,UPI,Bangalore
+ORD_5013,2026-03-16,CUST_104,Home & Kitchen,Cast Iron Skillet,1,1650,1650,Debit Card,Chennai
+ORD_5014,2026-03-22,CUST_105,Electronics,Fast Charging Power Bank,2,1299,2598,UPI,Pune
+ORD_5015,2026-03-28,CUST_109,Books,Python Deep Learning,2,850,1700,Credit Card,Jaipur
+ORD_5016,2026-03-29,CUST_102,Apparel,Athletic Running Shoes,1,4500,4500,Credit Card,Mumbai

@@ -1,0 +1,151 @@
+CustomerID,Tenure,MonthlyCharges,TotalCharges,Contract,TechSupport,OnlineSecurity,PaymentMethod,Churn
+CUST_1000,52,112.32,6056.68,One year,Yes,Yes,Mailed check,1
+CUST_1001,15,111.43,1674.6,Month-to-month,Yes,Yes,Credit card,1
+CUST_1002,61,43.92,2703.57,Month-to-month,No,No,Bank transfer,0
+CUST_1003,21,67.24,1397.78,Two year,Yes,Yes,Electronic check,1
+CUST_1004,24,48.58,1114.01,Month-to-month,Yes,Yes,Mailed check,0
+CUST_1005,3,47.06,138.85,Month-to-month,No,No,Electronic check,1
+CUST_1006,22,23.5,532.66,Month-to-month,No,No,Bank transfer,0
+CUST_1007,53,77.91,3924.68,One year,No,No,Bank transfer,0
+CUST_1008,2,67.75,133.24,Month-to-month,No,Yes,Bank transfer,1
+CUST_1009,30,24.89,739.1,One year,Yes,Yes,Electronic check,0
+CUST_1010,38,46.47,1772.46,Month-to-month,Yes,Yes,Electronic check,1
+CUST_1011,2,106.29,221.51,Month-to-month,No,Yes,Electronic check,1
+CUST_1012,64,42.76,2694.59,Month-to-month,No,Yes,Electronic check,0
+CUST_1013,60,33.77,1995.19,Month-to-month,No,Yes,Bank transfer,1
+CUST_1014,21,66.5,1429.67,One year,No,Yes,Bank transfer,1
+CUST_1015,33,113.64,3732.2,One year,Yes,Yes,Mailed check,0
+CUST_1016,58,43.0,2425.32,Two year,No,No,Mailed check,0
+CUST_1017,22,83.85,1835.93,Month-to-month,Yes,Yes,Electronic check,0
+CUST_1018,49,92.35,4362.63,Month-to-month,No,Yes,Credit card,1
+CUST_1019,59,42.58,2430.92,One year,Yes,No,Credit card,0
+CUST_1020,42,89.18,3744.95,Month-to-month,Yes,No,Bank transfer,0
+CUST_1021,60,54.94,3269.67,Month-to-month,Yes,Yes,Bank transfer,0
+CUST_1022,15,80.07,1250.88,Month-to-month,No,No,Bank transfer,1
+CUST_1023,62,80.19,4903.37,Month-to-month,No,No,Mailed check,0
+CUST_1024,62,70.9,4431.23,Two year,No,Yes,Mailed check,0
+CUST_1025,47,28.58,1361.03,Two year,No,No,Bank transfer,0
+CUST_1026,62,99.35,5859.78,One year,Yes,No,Bank transfer,0
+CUST_1027,51,50.47,2616.06,Month-to-month,Yes,Yes,Bank transfer,0
+CUST_1028,55,37.72,2007.81,Month-to-month,No,Yes,Credit card,0
+CUST_1029,64,23.87,1598.12,Month-to-month,Yes,No,Mailed check,0
+CUST_1030,3,76.13,220.37,Month-to-month,No,No,Credit card,1
+CUST_1031,51,84.37,4266.13,Month-to-month,Yes,Yes,Credit card,1
+CUST_1032,7,21.58,144.8,One year,No,Yes,Bank transfer,0
+CUST_1033,21,68.65,1513.28,One year,Yes,Yes,Bank transfer,1
+CUST_1034,39,41.52,1619.64,Month-to-month,No,No,Electronic check,0
+CUST_1035,18,81.29,1477.18,Two year,No,No,Electronic check,1
+CUST_1036,4,36.56,139.91,One year,No,Yes,Credit card,1
+CUST_1037,60,85.64,5266.84,One year,Yes,No,Mailed check,0
+CUST_1038,14,56.74,771.32,One year,No,No,Bank transfer,0
+CUST_1039,9,108.99,1019.96,Month-to-month,No,Yes,Bank transfer,1
+CUST_1040,53,33.06,1700.52,Month-to-month,No,Yes,Credit card,0
+CUST_1041,2,52.4,101.56,Month-to-month,No,No,Electronic check,1
+CUST_1042,60,30.78,1761.21,One year,No,No,Mailed check,0
+CUST_1043,71,107.85,7635.96,Month-to-month,No,No,Electronic check,0
+CUST_1044,44,103.35,4576.89,Month-to-month,No,No,Electronic check,1
+CUST_1045,8,44.5,340.54,Month-to-month,No,Yes,Electronic check,1
+CUST_1046,47,82.7,3993.99,Month-to-month,No,Yes,Electronic check,1
+CUST_1047,35,97.64,3401.44,Two year,Yes,No,Bank transfer,0
+CUST_1048,36,72.74,2625.03,One year,Yes,Yes,Bank transfer,0
+CUST_1049,50,70.32,3495.17,Month-to-month,No,Yes,Electronic check,1
+CUST_1050,4,42.98,170.21,Month-to-month,No,Yes,Mailed check,1
+CUST_1051,2,28.84,58.02,Month-to-month,No,Yes,Credit card,0
+CUST_1052,6,105.24,609.67,Month-to-month,No,Yes,Mailed check,1
+CUST_1053,54,105.54,5517.89,Month-to-month,Yes,Yes,Mailed check,0
+CUST_1054,4,80.14,332.16,Month-to-month,Yes,Yes,Mailed check,0
+CUST_1055,54,52.21,2945.12,Month-to-month,No,Yes,Electronic check,1
+CUST_1056,63,53.17,3307.27,One year,Yes,No,Bank transfer,0
+CUST_1057,18,88.97,1564.75,One year,No,No,Mailed check,1
+CUST_1058,44,105.23,4696.79,Month-to-month,Yes,No,Electronic check,0
+CUST_1059,34,104.27,3512.82,Month-to-month,No,No,Mailed check,0
+CUST_1060,62,94.09,5556.71,One year,No,No,Mailed check,0
+CUST_1061,14,80.99,1094.87,Month-to-month,No,Yes,Electronic check,1
+CUST_1062,48,27.99,1372.54,Two year,No,No,Bank transfer,0
+CUST_1063,15,35.35,538.68,One year,Yes,No,Bank transfer,0
+CUST_1064,62,105.36,6223.4,Month-to-month,No,No,Credit card,1
+CUST_1065,40,77.61,3018.09,Month-to-month,No,Yes,Electronic check,0
+CUST_1066,53,20.87,1076.36,One year,Yes,Yes,Credit card,0
+CUST_1067,24,29.64,723.59,Month-to-month,No,Yes,Credit card,0
+CUST_1068,26,83.03,2055.1,One year,No,Yes,Credit card,1
+CUST_1069,60,20.48,1180.15,Two year,No,No,Bank transfer,0
+CUST_1070,41,35.28,1489.86,One year,No,No,Electronic check,1
+CUST_1071,29,72.13,2024.53,Month-to-month,No,Yes,Credit card,1
+CUST_1072,15,85.73,1305.59,One year,No,No,Electronic check,1
+CUST_1073,45,81.94,3590.76,Month-to-month,No,No,Electronic check,0
+CUST_1074,65,41.31,2577.59,Month-to-month,No,Yes,Bank transfer,1
+CUST_1075,71,87.66,6064.01,Two year,Yes,Yes,Credit card,0
+CUST_1076,9,42.54,391.37,Month-to-month,Yes,Yes,Credit card,1
+CUST_1077,1,50.91,52.72,Two year,Yes,Yes,Electronic check,0
+CUST_1078,8,90.92,751.38,Two year,No,Yes,Mailed check,1
+CUST_1079,63,81.72,5095.43,Month-to-month,No,Yes,Bank transfer,0
+CUST_1080,11,100.68,1126.1,Month-to-month,Yes,Yes,Bank transfer,1
+CUST_1081,8,82.47,640.3,Month-to-month,No,Yes,Bank transfer,1
+CUST_1082,35,73.99,2536.08,Month-to-month,Yes,No,Bank transfer,1
+CUST_1083,35,28.9,1051.59,Month-to-month,No,Yes,Credit card,1
+CUST_1084,33,54.93,1724.41,One year,No,No,Credit card,0
+CUST_1085,5,45.19,216.58,Month-to-month,No,Yes,Mailed check,1
+CUST_1086,41,43.18,1718.66,Month-to-month,No,No,Bank transfer,0
+CUST_1087,28,112.44,2999.26,Two year,No,Yes,Bank transfer,1
+CUST_1088,7,57.34,388.59,Month-to-month,Yes,Yes,Electronic check,0
+CUST_1089,12,104.74,1267.32,Two year,Yes,No,Credit card,0
+CUST_1090,34,79.96,2697.28,Month-to-month,No,No,Bank transfer,0
+CUST_1091,33,95.51,3275.59,Month-to-month,No,No,Mailed check,1
+CUST_1092,48,67.75,3355.23,One year,No,Yes,Mailed check,0
+CUST_1093,23,74.81,1693.41,One year,No,Yes,Credit card,1
+CUST_1094,62,66.79,4041.36,Two year,No,No,Mailed check,0
+CUST_1095,37,38.55,1409.19,One year,No,No,Mailed check,0
+CUST_1096,44,88.63,3934.93,Two year,No,No,Credit card,0
+CUST_1097,35,46.67,1595.56,Month-to-month,No,No,Bank transfer,0
+CUST_1098,65,22.31,1468.15,Month-to-month,Yes,Yes,Bank transfer,0
+CUST_1099,47,81.32,3787.42,One year,No,No,Mailed check,0
+CUST_1100,3,36.83,111.07,Two year,Yes,Yes,Mailed check,0
+CUST_1101,1,109.34,108.64,Two year,No,Yes,Bank transfer,1
+CUST_1102,5,110.62,541.73,Month-to-month,No,Yes,Credit card,1
+CUST_1103,14,106.91,1563.86,Month-to-month,Yes,No,Mailed check,1
+CUST_1104,27,55.17,1528.86,One year,No,Yes,Electronic check,1
+CUST_1105,9,21.47,186.28,Month-to-month,No,Yes,Credit card,1
+CUST_1106,15,108.19,1682.65,Two year,Yes,No,Mailed check,1
+CUST_1107,42,60.68,2545.36,Two year,Yes,Yes,Mailed check,0
+CUST_1108,51,111.83,5928.36,Month-to-month,No,No,Electronic check,1
+CUST_1109,63,111.54,7237.73,One year,No,Yes,Electronic check,1
+CUST_1110,52,101.04,5214.79,One year,No,No,Bank transfer,0
+CUST_1111,4,47.97,182.72,Month-to-month,No,No,Credit card,1
+CUST_1112,23,56.58,1271.24,Two year,No,Yes,Credit card,1
+CUST_1113,15,100.86,1519.2,Month-to-month,No,Yes,Bank transfer,1
+CUST_1114,43,50.11,2183.49,Two year,No,Yes,Credit card,0
+CUST_1115,29,36.1,1021.55,Month-to-month,No,Yes,Credit card,0
+CUST_1116,36,72.9,2529.75,Two year,No,No,Credit card,0
+CUST_1117,13,108.93,1463.52,Month-to-month,Yes,Yes,Credit card,1
+CUST_1118,32,86.12,2889.33,Month-to-month,Yes,No,Credit card,1
+CUST_1119,71,74.16,5278.89,Two year,No,Yes,Electronic check,0
+CUST_1120,59,29.23,1667.95,Month-to-month,No,No,Credit card,0
+CUST_1121,28,78.43,2146.04,Month-to-month,No,No,Electronic check,1
+CUST_1122,66,114.06,7165.41,Two year,Yes,No,Credit card,0
+CUST_1123,42,33.31,1456.98,Two year,Yes,No,Bank transfer,0
+CUST_1124,45,69.24,2996.7,One year,Yes,Yes,Mailed check,0
+CUST_1125,62,103.35,6456.73,One year,Yes,Yes,Electronic check,0
+CUST_1126,57,90.37,5034.7,Month-to-month,No,No,Credit card,0
+CUST_1127,6,86.22,520.12,Month-to-month,Yes,No,Bank transfer,1
+CUST_1128,28,86.74,2465.5,Month-to-month,No,No,Mailed check,1
+CUST_1129,28,54.15,1566.2,One year,No,Yes,Electronic check,0
+CUST_1130,44,47.89,2045.3,One year,Yes,No,Mailed check,0
+CUST_1131,30,96.89,2764.56,One year,No,No,Bank transfer,1
+CUST_1132,62,96.96,5793.23,One year,No,Yes,Electronic check,1
+CUST_1133,62,102.37,6600.83,Month-to-month,Yes,Yes,Mailed check,1
+CUST_1134,1,106.76,110.75,Month-to-month,No,No,Credit card,1
+CUST_1135,27,68.58,1869.7,Month-to-month,No,No,Electronic check,1
+CUST_1136,62,67.64,4235.83,Month-to-month,No,No,Mailed check,1
+CUST_1137,3,95.84,292.27,Month-to-month,Yes,Yes,Bank transfer,0
+CUST_1138,70,81.75,5536.73,Two year,No,No,Bank transfer,0
+CUST_1139,27,86.69,2437.63,Month-to-month,No,Yes,Electronic check,0
+CUST_1140,9,95.6,853.41,Month-to-month,Yes,Yes,Mailed check,0
+CUST_1141,62,104.55,6406.35,Month-to-month,No,Yes,Electronic check,1
+CUST_1142,37,52.11,1931.72,One year,No,No,Electronic check,0
+CUST_1143,51,55.68,2711.03,One year,No,No,Mailed check,0
+CUST_1144,44,28.93,1230.44,Month-to-month,Yes,No,Mailed check,0
+CUST_1145,24,74.94,1841.37,Month-to-month,No,Yes,Credit card,1
+CUST_1146,59,23.41,1323.57,One year,Yes,No,Mailed check,0
+CUST_1147,32,64.23,2076.56,Month-to-month,Yes,Yes,Bank transfer,1
+CUST_1148,52,71.55,3625.85,Two year,Yes,No,Electronic check,0
+CUST_1149,62,47.22,2895.23,One year,Yes,Yes,Electronic check,0

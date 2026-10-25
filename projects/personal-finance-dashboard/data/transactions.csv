@@ -1,0 +1,33 @@
+Date,Category,Description,Amount,Type
+2026-01-02,Salary,Monthly Tech Salary,65000,Income
+2026-01-03,Housing,Apartment Rent,18000,Expense
+2026-01-04,Groceries,Supermarket Provisions,6200,Expense
+2026-01-07,Utilities,Electricity and Water,2100,Expense
+2026-01-10,Transportation,Monthly Metro Pass,1500,Expense
+2026-01-12,Dining,Weekend Restaurant,2400,Expense
+2026-01-15,Healthcare,Medical Checkup and Pharmacy,1800,Expense
+2026-01-18,Entertainment,Streaming Subscriptions,999,Expense
+2026-01-20,Groceries,Weekly Organic Market,3100,Expense
+2026-01-22,Investment,Mutual Fund SIP,15000,Expense
+2026-01-25,Shopping,Clothing and Footwear,3500,Expense
+2026-01-28,Dining,Dinner with Colleagues,1850,Expense
+2026-02-02,Salary,Monthly Tech Salary,65000,Income
+2026-02-03,Housing,Apartment Rent,18000,Expense
+2026-02-05,Groceries,Supermarket Supplies,5800,Expense
+2026-02-08,Utilities,Internet and Phone Bill,1800,Expense
+2026-02-11,Transportation,Fuel and Parking,2200,Expense
+2026-02-14,Dining,Valentine Dining,3200,Expense
+2026-02-17,Investment,Mutual Fund SIP,15000,Expense
+2026-02-20,Groceries,Specialty Grocery Store,3400,Expense
+2026-02-23,Entertainment,Concert Tickets,2500,Expense
+2026-02-26,Shopping,Electronics Accessory,2200,Expense
+2026-03-02,Salary,Monthly Tech Salary,65000,Income
+2026-03-03,Housing,Apartment Rent,18000,Expense
+2026-03-06,Groceries,Monthly Staples,6100,Expense
+2026-03-09,Utilities,Electricity Bill,2400,Expense
+2026-03-12,Transportation,Metro Recharge,1500,Expense
+2026-03-15,Healthcare,Dental Routine Cleaning,2200,Expense
+2026-03-18,Investment,Mutual Fund SIP,15000,Expense
+2026-03-21,Dining,Cafe and Lunches,2100,Expense
+2026-03-24,Shopping,Home Essentials,2900,Expense
+2026-03-27,Entertainment,Gaming and Books,1400,Expense

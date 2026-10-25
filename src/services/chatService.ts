@@ -143,7 +143,17 @@ class PortfolioKnowledgeBase {
       q.includes(' apps ') ||
       q.includes(' built ')
     ) {
-      return `Sriram's portfolio features modular project categories in:\n• Data Science Project\n• Python Project\n• Machine Learning Project\n\n*Note: Project details will be added soon as repositories are updated.*`;
+      return `Sriram's portfolio features 9 production-grade data science & engineering projects:\n\n` +
+        `• Featured 1: Personal Finance & Expense Intelligence Dashboard (Python, Pandas, Plotly, Streamlit)\n` +
+        `• Featured 2: Retail Sales Analytics with SQL (SQL, Python, Pandas, Plotly)\n` +
+        `• Featured 3: Customer Churn Prediction (Python, Pandas, NumPy, Scikit-learn, Matplotlib)\n` +
+        `• 4. E-Commerce Sales Analytics (Python, Pandas, SQL, Plotly, Streamlit)\n` +
+        `• 5. Data Cleaning and Quality Pipeline (Python, Pandas, SQL, pytest)\n` +
+        `• 6. Python API Data Pipeline (Python, REST APIs, Pandas, SQL, logging, pytest)\n` +
+        `• 7. Business Performance Reporting Automation (Python, Pandas, SQL, CSV/Excel)\n` +
+        `• 8. Student Academic Performance Analytics (Python, Pandas, NumPy, Matplotlib)\n` +
+        `• 9. News Sentiment & Editorial Intelligence Studio (Python, Scikit-learn, Plotly, Streamlit)\n\n` +
+        `All projects include working source code, synthetic datasets, and automated unit tests.`;
     }
 
     // 7. Training & GDSC

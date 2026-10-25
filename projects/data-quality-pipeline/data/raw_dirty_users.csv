@@ -1,0 +1,11 @@
+user_id,full_name,email,join_date,age,annual_salary,department
+USR_101,Aarav Sharma,aarav@tech.com,2024-01-15,29,75000,Engineering
+USR_102,Priya Patel,priya.patel@tech.com,15/02/2024,34,92000,Product
+USR_103,Rohan Verma,rohan.v@tech.com,2024-03-01,,68000,Marketing
+USR_104,Ananya Iyer,ananya@tech.com,2024-03-12,27,81000,Engineering
+USR_102,Priya Patel,priya.patel@tech.com,15/02/2024,34,92000,Product
+USR_105,Vikram Singh,vikram@tech.com,2024-04-05,-5,105000,Sales
+USR_106,Neha Gupta,,2024-04-20,31,72000,HR
+USR_107,Siddharth Rao,siddharth@tech.com,2024-05-02,42,4500000,Executive
+USR_108,Meera Nambiar,meera@tech.com,2024-05-18,26,,Engineering
+USR_109,Kavya Reddy,kavya@tech.com,2024-06-01,38,88000,Marketing

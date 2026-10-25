@@ -1,6 +1,18 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Sparkles, CheckCircle2, Code2, Layers, AlertCircle } from 'lucide-react';
+import {
+  X,
+  ExternalLink,
+  Sparkles,
+  CheckCircle2,
+  Code2,
+  Layers,
+  AlertCircle,
+  TrendingUp,
+  Database,
+  Brain,
+  Info,
+} from 'lucide-react';
 import { GithubIcon } from '../ui/Icons';
 import { ProjectItem } from '../../types';
 
@@ -8,6 +20,19 @@ interface ProjectModalProps {
   project: ProjectItem | null;
   onClose: () => void;
 }
+
+const getProjectModalIcon = (category?: string, id?: string) => {
+  if (category?.includes('Financial') || id?.includes('finance')) {
+    return <TrendingUp className="w-8 h-8" />;
+  }
+  if (category?.includes('SQL') || id?.includes('retail')) {
+    return <Database className="w-8 h-8" />;
+  }
+  if (category?.includes('Machine') || id?.includes('churn')) {
+    return <Brain className="w-8 h-8" />;
+  }
+  return <Code2 className="w-8 h-8" />;
+};
 
 export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   useEffect(() => {
@@ -52,13 +77,28 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {/* Modal Header */}
           <div className="flex items-start justify-between gap-4 pb-4 border-b border-[#1C2541]">
             <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#D4A373]/15 text-[#FAEDCD] border border-[#D4A373]/30 font-semibold">
-                  Featured Project Showcase
-                </span>
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                {project.category && (
+                  <span className="text-xs font-mono uppercase tracking-wider px-2.5 py-1 rounded-md bg-[#D4A373]/15 text-[#FAEDCD] border border-[#D4A373]/30 font-semibold">
+                    {project.category}
+                  </span>
+                )}
+                {project.status === 'in-progress' && (
+                  <span className="text-xs font-mono px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1.5 font-semibold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+                    In Progress
+                  </span>
+                )}
                 {project.status === 'upcoming' && (
-                  <span className="text-xs font-mono px-2.5 py-1 rounded-md bg-[#6FFFE9]/10 text-[#6FFFE9] border border-[#6FFFE9]/30">
-                    Slot Ready for Repository
+                  <span className="text-xs font-mono px-2.5 py-1 rounded-md bg-[#6FFFE9]/10 text-[#6FFFE9] border border-[#6FFFE9]/30 flex items-center gap-1.5 font-semibold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#6FFFE9]" />
+                    Upcoming / Planned
+                  </span>
+                )}
+                {project.status === 'completed' && (
+                  <span className="text-xs font-mono px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 font-semibold">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                    Completed
                   </span>
                 )}
               </div>
@@ -66,7 +106,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 {project.title}
               </h3>
               {project.subtitle && (
-                <p className="text-sm text-[#D4A373] font-mono mt-0.5 font-medium">{project.subtitle}</p>
+                <p className="text-sm text-[#D4A373] font-mono mt-0.5 font-medium">
+                  {project.subtitle}
+                </p>
               )}
             </div>
 
@@ -81,8 +123,9 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
           {/* Modal Scrollable Content */}
           <div className="overflow-y-auto pr-1 py-6 space-y-6 flex-1 custom-scrollbar">
-            {/* Project Image / Visual Placeholder */}
-            <div className="w-full h-52 sm:h-64 rounded-2xl bg-[#141D38] border border-[#232E4F] overflow-hidden relative flex items-center justify-center">
+            {/* Visual Hero / Banner Area */}
+            <div className="w-full h-44 sm:h-52 rounded-2xl bg-[#141D38] border border-[#232E4F] overflow-hidden relative flex items-center justify-center p-6 text-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D4A373]/10 via-transparent to-[#6FFFE9]/5 pointer-events-none" />
               {project.image ? (
                 <img
                   src={project.image}
@@ -90,15 +133,15 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   className="w-full h-full object-cover"
                 />
               ) : (
-                <div className="text-center p-6 select-none">
+                <div className="relative z-10 select-none max-w-md">
                   <div className="w-16 h-16 rounded-2xl bg-[#1C2541] border border-[#D4A373]/30 flex items-center justify-center mx-auto mb-3 shadow-glow-copper text-[#D4A373]">
-                    <Code2 className="w-8 h-8" />
+                    {getProjectModalIcon(project.category, project.id)}
                   </div>
                   <h4 className="font-heading font-bold text-[#EAEAEA] text-lg">
                     {project.title}
                   </h4>
                   <p className="text-xs text-[#9EABC0] mt-1 font-mono">
-                    Structured modular project entry
+                    {project.category || 'Featured Data Science Project'}
                   </p>
                 </div>
               )}
@@ -145,7 +188,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             {project.keyFeatures && project.keyFeatures.length > 0 && (
               <div>
                 <h4 className="text-sm font-mono uppercase tracking-wider text-[#9EABC0] mb-3 font-semibold">
-                  Key Planned / Supported Features:
+                  Key Planned &amp; Delivered Features:
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {project.keyFeatures.map((feat, idx) => (
@@ -178,19 +221,22 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               </div>
             </div>
 
-            {/* Architecture / Developer Customization note */}
+            {/* Implementation & Repository Status Note */}
             {project.details && (
-              <div className="p-3.5 rounded-xl bg-[#1C2541] border border-dashed border-[#232E4F] text-xs text-[#9EABC0] font-mono">
-                <span className="text-[#D4A373] font-semibold">Customization Note: </span>
-                {project.details}
+              <div className="p-3.5 rounded-xl bg-[#1C2541] border border-dashed border-[#232E4F] text-xs text-[#9EABC0] flex items-start gap-2.5 font-mono">
+                <Info className="w-4 h-4 text-[#D4A373] flex-shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-[#D4A373] font-semibold">Implementation Status: </span>
+                  {project.details}
+                </div>
               </div>
             )}
           </div>
 
-          {/* Modal Footer with Action Links */}
+          {/* Modal Footer with Action Links & Clear Placeholders */}
           <div className="pt-4 border-t border-[#1C2541] flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-3">
-              {project.github && project.github.trim() !== '' && (
+            <div className="flex flex-wrap items-center gap-2.5">
+              {project.github && project.github.trim() !== '' ? (
                 <a
                   href={project.github}
                   target="_blank"
@@ -200,9 +246,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   <GithubIcon className="w-4 h-4" />
                   <span>GitHub Repo</span>
                 </a>
+              ) : (
+                <div
+                  className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono bg-[#141D38] border border-[#232E4F] text-[#9EABC0]/80 shadow-soft"
+                  title="Repository pending publication"
+                >
+                  <GithubIcon className="w-4 h-4 text-[#9EABC0]/50" />
+                  <span>GitHub: Repository Pending Publication</span>
+                </div>
               )}
 
-              {project.liveDemo && project.liveDemo.trim() !== '' && (
+              {project.liveDemo && project.liveDemo.trim() !== '' ? (
                 <a
                   href={project.liveDemo}
                   target="_blank"
@@ -212,6 +266,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   <ExternalLink className="w-4 h-4" />
                   <span>Live Demo</span>
                 </a>
+              ) : (
+                <div
+                  className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono bg-[#141D38] border border-[#232E4F] text-[#9EABC0]/80 shadow-soft"
+                  title="Live deployment in preparation"
+                >
+                  <ExternalLink className="w-4 h-4 text-[#9EABC0]/50" />
+                  <span>Live Demo: In Preparation</span>
+                </div>
               )}
             </div>
 

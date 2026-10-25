@@ -65,6 +65,40 @@ async function runTests() {
   const resumeExists = fs.existsSync(path.resolve('public/resume.pdf'));
   assert(resumeExists, 'public/resume.pdf file exists and is downloadable');
 
+  // 7. Check Project Dashboard requirements
+  assert(portfolioData.projects.length === 9, 'Projects list contains exactly 9 unique projects');
+
+  const featuredProjects = portfolioData.projects.filter((p) => p.featured);
+  assert(featuredProjects.length === 3, 'Exactly 3 projects are marked as featured');
+
+  const expectedIds = [
+    'personal-finance-dashboard',
+    'retail-sales-analytics',
+    'customer-churn-prediction',
+    'ecommerce-sales-analytics',
+    'data-quality-pipeline',
+    'python-api-pipeline',
+    'business-report-automation',
+    'student-performance-analytics',
+    'news-sentiment-intelligence',
+  ];
+
+  for (const id of expectedIds) {
+    const proj = portfolioData.projects.find((p) => p.id === id);
+    assert(!!proj, `Project '${id}' is defined in portfolioData`);
+    assert(!!(proj && proj.title && proj.description && proj.category), `Project '${id}' has complete metadata`);
+    assert(!!(proj && proj.technologies.length > 0), `Project '${id}' has technology badges`);
+  }
+
+  const qProj = await sendChatMessage('Tell me about your projects.');
+  assert(
+    qProj.text.includes('Personal Finance & Expense Intelligence Dashboard') &&
+      qProj.text.includes('Retail Sales Analytics with SQL') &&
+      qProj.text.includes('Customer Churn Prediction') &&
+      qProj.text.includes('E-Commerce Sales Analytics'),
+    'Chatbot accurately describes the portfolio projects'
+  );
+
   console.log(`\n=== RESULTS: ${passed}/${total} TESTS PASSED ===\n`);
   if (passed === total) {
     process.exit(0);
